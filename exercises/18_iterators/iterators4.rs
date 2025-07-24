@@ -1,6 +1,4 @@
 fn factorial(num: u64) -> u64 {
-    // TODO: Complete this function to return the factorial of `num` which is
-    // defined as `1 * 2 * 3 * … * num`.
     // https://en.wikipedia.org/wiki/Factorial
     //
     // Do not use:
@@ -10,6 +8,7 @@ fn factorial(num: u64) -> u64 {
     // - additional variables
     // For an extra challenge, don't use:
     // - recursion
+    (1..=num).into_iter().fold(1, |acc, x| acc * x)
 }
 
 fn main() {

@@ -1,5 +1,5 @@
 fn main() {
-    let a = vec![1, 2, 3];
+    let a = [1, 2, 3];
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
